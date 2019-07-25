@@ -6,7 +6,7 @@ var filter_button = d3.select("#filter-btn");
 //loop through the array to pull out the key, value of table data and append
 tableData.forEach(function (ufo){
     var tr_row = t_body.append("tr");
-
+    
     Object.defineProperties(ufo).forEach(function([key, value]){
         var td_cell = t_body.append("td")
         td_cell.text(value);
