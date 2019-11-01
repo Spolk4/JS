@@ -2,6 +2,7 @@
 var tableData = data;
 var t_body = d3.select("tbody");
 var filter_button = d3.select("#filter-btn");
+
 // YOUR CODE HERE!
 //loop through the array to pull out the key, value of table data and append it 
 tableData.forEach(function (ufo){
@@ -18,7 +19,7 @@ filter_button.on("click", function () {
     var element =d3.select("#datetime");
     var input =element.property("value");
     t_body.html("");
-    t_body.append("tr").append("td").text("Findme");
+    t_body.append("tr").append("td");
 
     //create an array with elements and input value
     var filtered = tableData.filter(elem=> elem.datetime ===input);
